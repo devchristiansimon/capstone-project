@@ -18,7 +18,9 @@ export default styled.createGlobalStyle`
 
   header {
     font-family: 'Press Start 2P', cursive;
+    background-color: #000;
     color: #db0000;
+    height: 15vh;
   }
 
   button,
