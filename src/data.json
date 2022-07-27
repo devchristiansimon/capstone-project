@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "type": "contentVideo",
+    "videoName": "Erste Schritte in League of Legends",
+    "category": "hero",
+    "isLocked": false,
+    "keyword": [2022, "Illidan", "Gustl", "Erste Schritte in League of Legends"],
+    "videoUrl": "url",
+    "thumbnailUrl": "https://vimeo.com/733153291",
+    "cost": 50,
+    "rating": 4,
+    "creator": "Gustl",
+    "amountRates": 4,
+    "description": "Das ist ein Video"
+  },
+  {
+    "id": "2",
+    "type": "contentVideo",
+    "videoName": "Schnell leveln",
+    "category": "allgemein",
+    "isLocked": false,
+    "keyword": [2022, "allHeroes", "Gustl", "Schnell leveln"],
+    "videoUrl": "url",
+    "thumbnailUrl": "https://vimeo.com/733153272",
+    "cost": 50,
+    "rating": 4.4,
+    "creator": "Gustl",
+    "amountRates": 4,
+    "description": "Das ist ein Video"
+  }
+]

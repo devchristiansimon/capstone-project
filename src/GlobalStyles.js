@@ -12,6 +12,15 @@ export default styled.createGlobalStyle`
     margin: 0;
     font-size: 1.125rem;
     font-family: sans-serif;
+    background-color: #181818;
+    color: #fff;
+  }
+
+  header {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000;
+    color: #db0000;
+    height: 15vh;
   }
 
   button,
