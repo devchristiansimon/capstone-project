@@ -21,6 +21,9 @@ export default styled.createGlobalStyle`
     background-color: #000;
     color: #db0000;
     height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   button,
