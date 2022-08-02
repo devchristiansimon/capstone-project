@@ -42,9 +42,10 @@ const StyledModal = styled.div`
   z-index: 1;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-  width: 90vw;
-  height: 90vh;
+  transform: translate(-50%, -95%);
+  width: 55%;
+  min-width: 350px;
+  height: 50%;
   background-color: rgba(24, 24, 24, 0.95);
   color: white;
 `;
