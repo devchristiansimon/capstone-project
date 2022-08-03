@@ -1,10 +1,13 @@
 import rawData from './data.json';
 import CardSection from './components/styles/CardSection';
 import {ContentCard, ThumbnailImg, CardInfoBar} from './components/styles/ContentCard';
+import {Modal} from './components/Modal';
 import {FaRegStar, FaRegEye, FaRegGem} from 'react-icons/fa';
+import {useState} from 'react';
 
 export default function App() {
-  console.log(rawData);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedContentItem, setSelectedContentItem] = useState(null);
   return (
     <div>
       <header>
@@ -13,7 +16,13 @@ export default function App() {
       <main>
         <CardSection>
           {rawData.map(card => (
-            <ContentCard key={card.id}>
+            <ContentCard
+              key={card.id}
+              onClick={() => {
+                setSelectedContentItem(card);
+                setModalIsOpen(true);
+              }}
+            >
               <ThumbnailImg src={card.thumbnailUrl} />
               {card.videoName}
               <CardInfoBar>
@@ -27,6 +36,13 @@ export default function App() {
             </ContentCard>
           ))}
         </CardSection>
+        <Modal
+          isOpen={modalIsOpen}
+          onClose={() => {
+            setModalIsOpen(false);
+          }}
+          content={selectedContentItem}
+        />
       </main>
     </div>
   );
