@@ -11,8 +11,9 @@ export const StyledModal = styled.div`
   width: 100%;
   min-width: 350px;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   color: white;
+  overflow-y: scroll;
 `;
 
 export const PlayerStyle = styled.div`
@@ -49,14 +50,9 @@ export const CloseButton = styled.button`
   background-color: transparent;
   color: #fff;
   border: none;
-  &:hover {
-     {
-      /*test comment*/
-    }
-    background-color: #db0000;
-  }
   border-radius: 50px;
 `;
 export const CardHeader = styled.h2`
   font-size: 1rem;
+  margin-top: 30px;
 `;
