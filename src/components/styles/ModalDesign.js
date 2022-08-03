@@ -50,6 +50,9 @@ export const CloseButton = styled.button`
   color: #fff;
   border: none;
   &:hover {
+     {
+      /*test comment*/
+    }
     background-color: #db0000;
   }
   border-radius: 50px;
