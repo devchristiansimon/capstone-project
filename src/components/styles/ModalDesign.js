@@ -4,7 +4,6 @@ export const StyledModal = styled.div`
   display: flex;
   text-align: center;
   flex-flow: column nowrap;
-  justify-content: space-between;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -24,13 +23,18 @@ export const PlayerStyle = styled.div`
 export const IFrameStyler = styled.iframe`
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   height: 100%;
   position: absolute;
+  text-align: center;
 `;
 
 export const DescriptionField = styled.span`
-  padding: 20px 5px;
+  padding: 10px;
+  padding-bottom: 20px;
   font-size: 0.8rem;
   background-color: #000;
 `;
