@@ -1,32 +1,18 @@
 import styled from 'styled-components';
 
 export function Modal({isOpen, onClose, content}) {
-  const playerStyle = {
-    padding: '56.25% 0 0 0',
-    position: 'relative',
-  };
-
-  const iframeStyler = {
-    top: '0',
-    left: '0',
-    width: '100%',
-    height: '100%',
-    position: 'absolute',
-  };
-
   return (
     isOpen && (
       <StyledModal>
         <h2>{content.videoName}</h2>
-        <div style={playerStyle}>
-          <iframe
+        <PlayerStyle>
+          <IFrameStyler
             src={content.videoUrl}
             frameBorder="0"
             allow="autoplay; fullscreen; picture-in-picture"
-            style={iframeStyler}
             title={content.videoName}
-          ></iframe>
-        </div>
+          ></IFrameStyler>
+        </PlayerStyle>
         <button onClick={onClose}>Close</button>
       </StyledModal>
     )
@@ -48,4 +34,17 @@ const StyledModal = styled.div`
   height: 50%;
   background-color: rgba(24, 24, 24, 0.95);
   color: white;
+`;
+
+const PlayerStyle = styled.div`
+  padding: 56.25% 0 0 0;
+  position: relative;
+`;
+
+const IFrameStyler = styled.iframe`
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 `;

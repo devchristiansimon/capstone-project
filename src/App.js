@@ -8,7 +8,6 @@ import {useState} from 'react';
 export default function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedContentItem, setSelectedContentItem] = useState(null);
-  console.log(modalIsOpen);
   return (
     <div>
       <header>
