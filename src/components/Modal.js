@@ -1,10 +1,12 @@
-import {PlayerStyle, IFrameStyler, StyledModal} from './styles/ModalDesign';
+import {PlayerStyle, IFrameStyler, StyledModal, DescriptionField, CloseButton, CardHeader} from './styles/ModalDesign';
+import {CardInfoBar} from './styles/ContentCard';
+import {FaRegStar, FaRegEye, FaRegGem} from 'react-icons/fa';
 
 export function Modal({isOpen, onClose, content}) {
   return (
     isOpen && (
       <StyledModal>
-        <h2>{content.videoName}</h2>
+        <CardHeader>{content.videoName}</CardHeader>
         <PlayerStyle>
           <IFrameStyler
             src={content.videoUrl}
@@ -13,7 +15,16 @@ export function Modal({isOpen, onClose, content}) {
             title={content.videoName}
           ></IFrameStyler>
         </PlayerStyle>
-        <button onClick={onClose}>Close</button>
+        <DescriptionField>{content.description}</DescriptionField>
+        <CloseButton onClick={onClose}>X</CloseButton>
+        <CardInfoBar>
+          <FaRegStar />
+          {content.rating}
+          <FaRegEye />
+          {content.amountRates}
+          <FaRegGem />
+          {content.cost}
+        </CardInfoBar>
       </StyledModal>
     )
   );
