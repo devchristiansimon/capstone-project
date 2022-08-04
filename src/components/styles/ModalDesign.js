@@ -51,6 +51,9 @@ export const CloseButton = styled.button`
   color: #fff;
   border: none;
   border-radius: 50px;
+  &:hover {
+    background: red;
+  }
 `;
 export const CardHeader = styled.h2`
   font-size: 1rem;
