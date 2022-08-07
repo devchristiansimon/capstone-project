@@ -31,4 +31,13 @@ export default styled.createGlobalStyle`
   textarea {
     font: inherit;
   }
+
+  a:link,
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  .active {
+    color: #db0000 !important;
+  }
 `;
