@@ -1,49 +1,20 @@
-import rawData from './data.json';
-import CardSection from './components/styles/CardSection';
-import {ContentCard, ThumbnailImg, CardInfoBar} from './components/styles/ContentCard';
-import {Modal} from './components/Modal';
-import {FaRegStar, FaRegEye, FaRegGem} from 'react-icons/fa';
-import {useState} from 'react';
+import {Route, Routes} from 'react-router-dom';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Library from './components/Library';
+import Create from './components/Create';
+import Profile from './components/Profile';
 
 export default function App() {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [selectedContentItem, setSelectedContentItem] = useState(null);
   return (
     <div>
-      <header>
-        <h1>SkillBro</h1>
-      </header>
-      <main>
-        <CardSection>
-          {rawData.map(card => (
-            <ContentCard
-              key={card.id}
-              onClick={() => {
-                setSelectedContentItem(card);
-                setModalIsOpen(true);
-              }}
-            >
-              <ThumbnailImg src={card.thumbnailUrl} />
-              {card.videoName}
-              <CardInfoBar>
-                <FaRegStar />
-                {card.rating}
-                <FaRegEye />
-                {card.amountRates}
-                <FaRegGem />
-                {card.cost}
-              </CardInfoBar>
-            </ContentCard>
-          ))}
-        </CardSection>
-        <Modal
-          isOpen={modalIsOpen}
-          onClose={() => {
-            setModalIsOpen(false);
-          }}
-          content={selectedContentItem}
-        />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/library" element={<Library />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+      <Navbar />
     </div>
   );
 }
