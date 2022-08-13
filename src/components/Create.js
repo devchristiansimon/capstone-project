@@ -1,5 +1,10 @@
 function Create() {
-  return <div>Create</div>;
+  return (
+    <>
+      <h1>Erstelle Content</h1>
+      <main></main>
+    </>
+  );
 }
 
 export default Create;

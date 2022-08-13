@@ -2,7 +2,6 @@
   {
     "id": "1",
     "videoName": "Erste Schritte in League of Legends",
-    "category": "hero",
     "isLocked": false,
     "keyword": [2022, "Illidan", "Gustl", "Erste Schritte in League of Legends"],
     "videoUrl": "https://player.vimeo.com/video/733153328",
@@ -16,13 +15,12 @@
   {
     "id": "2",
     "videoName": "Schnell leveln",
-    "category": "allgemein",
     "isLocked": false,
     "keyword": [2022, "allHeroes", "Gustl", "Schnell leveln"],
     "videoUrl": "https://player.vimeo.com/video/733153328",
     "thumbnailUrl": "/images/thumbnail2.png",
     "cost": 50,
-    "rating": 4.4,
+    "rating": 3.4,
     "creator": "Gustl",
     "amountRates": 4,
     "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
@@ -30,7 +28,6 @@
   {
     "id": "3",
     "videoName": "Schnell leveln",
-    "category": "allgemein",
     "isLocked": false,
     "keyword": [2022, "allHeroes", "Gustl", "Schnell leveln"],
     "videoUrl": "https://player.vimeo.com/video/733153328",
@@ -44,7 +41,6 @@
   {
     "id": "4",
     "videoName": "Schnell leveln",
-    "category": "allgemein",
     "isLocked": false,
     "keyword": [2022, "allHeroes", "Gustl", "Schnell leveln"],
     "videoUrl": "https://player.vimeo.com/video/733153328",
@@ -58,7 +54,6 @@
   {
     "id": "5",
     "videoName": "Schnell leveln",
-    "category": "allgemein",
     "isLocked": false,
     "keyword": [2022, "allHeroes", "Gustl", "Schnell leveln"],
     "videoUrl": "https://player.vimeo.com/video/733153328",
@@ -72,7 +67,6 @@
   {
     "id": "6",
     "videoName": "Schnell leveln",
-    "category": "allgemein",
     "isLocked": false,
     "keyword": [2022, "allHeroes", "Gustl", "Schnell leveln"],
     "videoUrl": "https://player.vimeo.com/video/733153328",
@@ -86,7 +80,6 @@
   {
     "id": "7",
     "videoName": "Schnell leveln",
-    "category": "allgemein",
     "isLocked": false,
     "keyword": [2022, "allHeroes", "Gustl", "Schnell leveln"],
     "videoUrl": "https://player.vimeo.com/video/733153328",
@@ -100,7 +93,6 @@
   {
     "id": "8",
     "videoName": "Schnell leveln",
-    "category": "allgemein",
     "isLocked": false,
     "keyword": [2022, "allHeroes", "Gustl", "Schnell leveln"],
     "videoUrl": "https://player.vimeo.com/video/733153328",
@@ -114,7 +106,6 @@
   {
     "id": "9",
     "videoName": "Schnell leveln",
-    "category": "allgemein",
     "isLocked": false,
     "keyword": [2022, "allHeroes", "Gustl", "Schnell leveln"],
     "videoUrl": "https://player.vimeo.com/video/733153328",

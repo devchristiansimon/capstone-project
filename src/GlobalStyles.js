@@ -16,7 +16,7 @@ export default styled.createGlobalStyle`
     color: #fff;
   }
 
-  header {
+  h1 {
     font-family: 'Press Start 2P', cursive;
     background-color: #000;
     color: #db0000;
@@ -24,6 +24,8 @@ export default styled.createGlobalStyle`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    text-align: center;
   }
 
   button,
@@ -39,5 +41,9 @@ export default styled.createGlobalStyle`
   }
   .active {
     color: #db0000 !important;
+  }
+  .linkStyle {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
   }
 `;
