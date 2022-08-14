@@ -12,7 +12,7 @@ function Navbar() {
         </NavigationListItem>
         <NavigationListItem>
           <NavLink to="/library" className="linkStyle">
-            Helden
+            Champions
           </NavLink>
         </NavigationListItem>
         <NavigationListItem>

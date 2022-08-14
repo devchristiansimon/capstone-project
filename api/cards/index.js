@@ -8,6 +8,19 @@ const handler = async (request, response) => {
       const cards = await Cards.find();
 
       return response.status(200).json(cards);
+    } else if (request.method === 'POST') {
+      const user = new Cards({
+        videoName: request.body.videoName,
+        description: request.body.description,
+        isLocked: false,
+        videoUrl: request.body.videoUrl,
+        thumbnailUrl: request.body.thumbnailUrl,
+        cost: request.body.cost,
+        rating: 0,
+        amountRates: 0,
+      });
+      const newUser = await user.save();
+      return response.json(newUser);
     }
   } catch (error) {
     return response.status(500).json({message: 'server error' + error.message});
