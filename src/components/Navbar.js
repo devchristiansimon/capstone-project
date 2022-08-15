@@ -1,22 +1,24 @@
 import {NavLink} from 'react-router-dom';
 import styled from 'styled-components';
-import GlobalStyles from '../GlobalStyles';
 
 function Navbar() {
   return (
     <Navigation>
       <NavigationList>
         <NavigationListItem>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/" className="linkStyle">
+            Start
+          </NavLink>
         </NavigationListItem>
         <NavigationListItem>
-          <NavLink to="/library">Verzeichnis</NavLink>
+          <NavLink to="/library" className="linkStyle">
+            Helden
+          </NavLink>
         </NavigationListItem>
         <NavigationListItem>
-          <NavLink to="/create">Erstellen</NavLink>
-        </NavigationListItem>
-        <NavigationListItem>
-          <NavLink to="/profile">Profil</NavLink>
+          <NavLink to="/create" className="linkStyle">
+            Neu
+          </NavLink>
         </NavigationListItem>
       </NavigationList>
     </Navigation>
