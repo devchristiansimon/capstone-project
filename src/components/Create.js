@@ -49,7 +49,8 @@ function Create() {
       <h1>Erstelle Content</h1>
       <CreateStyle>
         <UploadForm onSubmit={formHandler}>
-          <label> Schritt 1:</label>
+          <h2> Schritt 1:</h2>
+          <label>Thumbnail auswählen</label>
           <input type="file"></input>
           <button type="submit">Upload - {progress} %</button>
           <div>
@@ -58,7 +59,7 @@ function Create() {
         </UploadForm>
 
         <UploadForm>
-          <label>Schritt 2:</label>
+          <h2>Schritt 2:</h2>
           <label>Video Name:</label>
           <input type="text" onChange={e => setVideotName(e.target.value)} name="vname" />
           <label>Video Pfad</label>
@@ -69,7 +70,7 @@ function Create() {
           <label>Beschreibung:</label>
           <textarea type="text" onChange={e => setDescription(e.target.value)} name="description" />
           <button type="submit" onClick={sendDataToMongo}>
-            Submit
+            Einsenden
           </button>
         </UploadForm>
       </CreateStyle>
