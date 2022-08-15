@@ -26,6 +26,7 @@ export default styled.createGlobalStyle`
     align-items: center;
     margin: 0;
     text-align: center;
+    border-bottom: 2px solid #db0000;
   }
 
   button,

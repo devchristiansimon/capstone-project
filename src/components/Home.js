@@ -33,7 +33,7 @@ export default function Home() {
               }}
             >
               <ThumbnailImg src={card.thumbnailUrl} />
-              {card.videoName}
+              <h4>{card.videoName}</h4>
               <CardInfoBar>
                 <FaRegStar />
                 {card.rating}

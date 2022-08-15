@@ -28,3 +28,9 @@ export const CardInfoBar = styled.div`
   justify-content: space-around;
   background-color: #000;
 `;
+export const HeroImg = styled.img`
+  width: 120px;
+  height: 120px;
+  margin: 5px;
+  align-self: center;
+`;

@@ -4,6 +4,7 @@ export const StyledModal = styled.div`
   display: flex;
   text-align: center;
   flex-flow: column nowrap;
+  gap: 5px;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -37,6 +38,8 @@ export const DescriptionField = styled.span`
   padding: 10px 10px 20px 10px;
   font-size: 0.8rem;
   background-color: #000;
+  margin-left: 20px;
+  margin-right: 20px;
 `;
 
 export const CloseButton = styled.button`
@@ -57,4 +60,16 @@ export const CloseButton = styled.button`
 export const CardHeader = styled.h2`
   font-size: 1rem;
   margin-top: 30px;
+`;
+
+export const HeroStats = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 20px;
+`;
+
+export const HeroStatsList = styled.ul`
+  list-style: none;
+  font-size: 0.9rem;
+  text-align: left;
 `;

@@ -1,10 +1,13 @@
-import {ThumbnailImg} from './styles/ContentCard';
+import {HeroImg} from './styles/ContentCard';
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import CardSection from './styles/CardSection';
 import styled from 'styled-components';
+import {HeroModal} from './HeroModal';
 
 function Library() {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedContentItem, setSelectedContentItem] = useState(null);
   const [myData, setMyData] = useState([]);
   let myRealData = [];
   const apiUrl = '/api/heroes';
@@ -26,12 +29,27 @@ function Library() {
       <h1>Champions</h1>
       <CardSection>
         {myRealData.map(data => (
-          <HeroCard key={data.key}>
-            <ThumbnailImg src={`${heroImgUrl}${data.id}.png`} />
+          <HeroCard
+            key={data.key}
+            onClick={() => {
+              setSelectedContentItem(data);
+              setModalIsOpen(true);
+            }}
+          >
+            <HeroImg src={`${heroImgUrl}${data.id}.png`} />
             <div>{data.id}</div>
+            <HeroClass>{data.tags[0]}</HeroClass>
           </HeroCard>
         ))}
       </CardSection>
+      <HeroModal
+        isOpen={modalIsOpen}
+        onClose={() => {
+          setModalIsOpen(false);
+        }}
+        herocontent={selectedContentItem}
+        heroImg={heroImgUrl}
+      />
     </>
   );
 }
@@ -43,11 +61,14 @@ const HeroCard = styled.article`
   flex-direction: column;
   justify-content: space-between;
   width: 170px;
-  height: 160px;
+  height: 180px;
   margin: 5px;
   padding: 10px;
   background-color: #000;
   font-size: 0.9rem;
   text-align: center;
   border-radius: 7px;
+`;
+const HeroClass = styled.span`
+  font-size: 0.7rem;
 `;
