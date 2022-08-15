@@ -65,7 +65,6 @@ export const CardHeader = styled.h2`
 export const HeroStats = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-left: 0px;
   margin-right: 20px;
 `;
 
